@@ -22,7 +22,7 @@ describe("Test head", () => {
 
 describe("Test tail", () => {
     it("returns true if tail is 3", () => {
-        expect(cater.tail([1,2,3])).equal(3)
+        expect(cater.tail([1,2,3])).eql([2,3])
     })
 })
 
