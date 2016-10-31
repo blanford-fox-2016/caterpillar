@@ -5,3 +5,6 @@ console.log(cater.isEmpty([1,2,3]))
 
 console.log("count")
 console.log(cater.count([1,2,3]))
+
+console.log("head")
+console.log(cater.head([1,2,3]))
