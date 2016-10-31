@@ -1,0 +1,23 @@
+{
+  "name": "caterpillar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arctic-fox-2016/caterpillar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arctic-fox-2016/caterpillar/issues"
+  },
+  "homepage": "https://github.com/arctic-fox-2016/caterpillar#readme",
+  "dependencies": {
+    "lodash": "^4.16.2"
+  }
+}
