@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/blanford-fox-2016/caterpillar/issues"
   },
-  "homepage": "https://github.com/blanford-fox-2016/caterpillar#readme"
+  "homepage": "https://github.com/blanford-fox-2016/caterpillar#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
+  }
 }
