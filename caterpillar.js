@@ -21,11 +21,21 @@ let tail = (arr) => {
 }
 
 let flatten = (arr) => {
-  let flat = [].concat.apply([], arr);
-  return flat;
+  let result = []
+  arr.forEach(item => {
+    if (typeof item == 'object') {
+      let flat = flatten(item)
+      flat.forEach(flat_item => {
+        result.push(flat_item);
+      })
+    } else {
+      result.push(item)
+    }
+  })
+  return result;
 }
 
-console.log(flatten([1, [2, 3], 4, [5, 6, 7]]));
+console.log(flatten([1, [2, 3], 4, [5, [6, 7]]]));
 
 module.exports = {
   isEmpty: isEmpty,
