@@ -1,5 +1,5 @@
 'use strict'
-
+const assert = require('assert');
 const C = require('./camda');
 
 
@@ -10,7 +10,8 @@ let empty   = [],
 
 
 
-// Testing
+// Manual Testing
+
 
 // isEmpty
 console.log(C.isEmpty(empty)); // true []
