@@ -39,3 +39,10 @@ describe('tail', () => {
     expect(tail([1, 2, 3, 4, 5])).eql([2, 3, 4, 5]);
   })
 })
+
+
+describe('flatten', () => {
+  it('should convert multidimensional array to one dimension array', () => {
+    expect(flatten([1, [2, 3], 4, [5, [6, 7]]])).eql([1, 2, 3, 4, 5, 6, 7]);
+  })
+})
