@@ -2,6 +2,7 @@
 const mocha = require('mocha');
 const chai = require('chai');
 const assert = chai.assert;
+const expect = chai.expect;
 const caterpillar = require('../caterpillar');
 const isEmpty = caterpillar.isEmpty;
 const count = caterpillar.count;
@@ -30,5 +31,11 @@ describe('count', () => {
 describe('head', () => {
   it('should return the first value of an array', () => {
     assert.equal(1, head([1, 2, 3, 4, 5]));
+  })
+})
+
+describe('tail', () => {
+  it('should return all values of an array except the first one', () => {
+    expect(tail([1, 2, 3, 4, 5])).eql([2, 3, 4, 5]);
   })
 })
