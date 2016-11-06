@@ -14,6 +14,12 @@ describe('isEmpty', () => {
 
 describe('isEmpty', () => {
   it('should return true if the array is empty', () => {
-    assert.equal(true, isEmpty([1, 2]));
+    assert.equal(false, isEmpty([1, 2]));
+  })
+})
+
+describe('count', () => {
+  it('should return the numbers of value, inside the array', () => {
+    assert.equal(5, count([1, 2, 3, 4, 5]));
   })
 })
